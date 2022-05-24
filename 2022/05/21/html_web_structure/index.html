@@ -9,7 +9,7 @@
     
     <title>
         
-            网页结构 |
+            html基础 |
         
         GlenSea Blog
     </title>
@@ -168,7 +168,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">网页结构</span>
+            <span class="title-hover-animation">html基础</span>
         </div>
 
         
@@ -180,7 +180,7 @@
                     <div class="author">
                         <span class="name">九幽沧澜</span>
                         
-                            <span class="author-label">Lv1</span>
+                            <span class="author-label">Lv2</span>
                         
                     </div>
                     <div class="meta-info">
@@ -208,7 +208,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84/">网页结构</a>&nbsp;
+                        <a href="/tags/html%E5%9F%BA%E7%A1%80/">html基础</a>&nbsp;
                     </li>
                 
             </ul>
@@ -227,35 +227,84 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="网页结构"><a href="#网页结构" class="headerlink" title="网页结构"></a>网页结构</h1><h2 id="一、构成"><a href="#一、构成" class="headerlink" title="一、构成"></a>一、构成</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 头部 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">keywords</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 主体 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>我的第一个页面<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 硬写 也可以显示 但浏览器默认会把你放在一个根标签内，属于叫怪异模式(不推荐这么写) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>我的第二个页面<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+            <h1 id="一、网页结构"><a href="#一、网页结构" class="headerlink" title="一、网页结构"></a>一、网页结构</h1><h2 id="1-构成"><a href="#1-构成" class="headerlink" title="1. 构成"></a>1. 构成</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 头部 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">keywords</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 主体 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>我的第一个页面<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 硬写 也可以显示 但浏览器默认会把你放在一个根标签内，属于叫怪异模式(不推荐这么写) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>我的第二个页面<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="1-文档声明"><a href="#1-文档声明" class="headerlink" title="1. 文档声明"></a>1. 文档声明</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-文档声明"><a href="#1-1-文档声明" class="headerlink" title="1.1 文档声明"></a>1.1 文档声明</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>告诉浏览器，当前页面是按照html5规范写的。</p>
 <p>如果不写，浏览器解析页面的时候，可能会进入怪异模式，导致无法正常显示页面。</p>
-<h3 id="2-头部标签"><a href="#2-头部标签" class="headerlink" title="2. 头部标签"></a>2. 头部标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-头部标签"><a href="#1-2-头部标签" class="headerlink" title="1.2 头部标签"></a>1.2 头部标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>所有的标签都应该写在html中，一个页面只有一个根标签。</p>
-<h4 id="2-1-meta标签"><a href="#2-1-meta标签" class="headerlink" title="2.1 meta标签"></a>2.1 meta标签</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;utf-8&quot; name=&quot;&quot; keywords=&quot;&quot;/&gt;</span><br></pre></td></tr></table></figure>
-
-<p>用来设置网页的元数据，不会变的数据，是给浏览器看的，是自结束标签</p>
+<h4 id="1-2-1-meta标签"><a href="#1-2-1-meta标签" class="headerlink" title="1.2.1 meta标签"></a>1.2.1 meta标签</h4><p>用来设置网页的元数据，不会变的数据，是给浏览器看的，是自结束标签</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">编码	王老师 ======&gt;01110111</span><br><span class="line"></span><br><span class="line">解码	01110111======&gt;王老师 </span><br><span class="line"></span><br><span class="line">字符集（密码本）	常见的有：</span><br><span class="line"></span><br><span class="line">GB2312	中国的</span><br><span class="line"></span><br><span class="line">GBK		  中国扩充版</span><br><span class="line"></span><br><span class="line">UTF-8	   万国码</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-2-1-1-PC端"><a href="#1-2-1-1-PC端" class="headerlink" title="1.2.1.1 PC端"></a>1.2.1.1 PC端</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">keywords</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>(1) charset属性</p>
 <p>​            设置网页的字符集，避免乱码问题。</p>
 <p>(2) name，keywords    </p>
 <p>​            也是帮助浏览收录网页的。</p>
-<h3 id="3-头部标签"><a href="#3-头部标签" class="headerlink" title="3.头部标签"></a>3.头部标签</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="1-2-1-2-移动端"><a href="#1-2-1-2-移动端" class="headerlink" title="1.2.1.2 移动端"></a>1.2.1.2 移动端</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 以下两个meta 是针对移动端的设置 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width&quot;</span>, <span class="attr">initial-scale</span>=<span class="string">1,</span> <span class="attr">minimum-scale</span>=<span class="string">1,</span> <span class="attr">maximum-scale</span>=<span class="string">1,</span> <span class="attr">user-scalable</span>=<span class="string">no</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="1-3-头部标签"><a href="#1-3-头部标签" class="headerlink" title="1.3.头部标签"></a>1.3.头部标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>保存一些元信息，元数据，这标签内的内容，不会在页面中展示，它是用来帮助浏览器解析页面的</p>
-<h3 id="3-主内容区"><a href="#3-主内容区" class="headerlink" title="3.主内容区"></a>3.主内容区</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-主内容区"><a href="#1-4-主内容区" class="headerlink" title="1.4.主内容区"></a>1.4.主内容区</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>硬写 也可以显示 但浏览器默认会把你放在一个根标签内，属于叫怪异模式(不推荐这么写)。</p>
-<h2 id="二、标签"><a href="#二、标签" class="headerlink" title="二、标签"></a>二、标签</h2><h3 id="1-注释符号"><a href="#1-注释符号" class="headerlink" title="1. 注释符号"></a>1. 注释符号</h3><p>不会在页面中显示</p>
+<p>注意：</p>
+<ol>
+<li>html当中不区分大小写，但一般我们用小写比较多。</li>
+<li>html中的注解不能嵌套。</li>
+<li>html标签结构必须完整，要么成对出现，要么是自结束标签。</li>
+<li>浏览器会修正你的代码，你所有不符合语法规范的内容浏览器会帮你修正，但有些情况，会修正错误，而且会影响网站的性能，所以要避免。</li>
+<li>html标签可以嵌套，但不可交叉嵌套。</li>
+</ol>
+<h1 id="二、实体"><a href="#二、实体" class="headerlink" title="二、实体"></a>二、实体</h1><p>在网页编写中多个空格会被浏览器默认为一个空格</p>
+<p>eg：3&lt;5&gt;4</p>
+<p>在html中，一些特殊的字符是不能直接使用的，比如空格，大于号，小于号，©，像这些特殊的没有办法直接打出来的字符，我们需要用其他的字符来表示，这些字符就叫做实体。</p>
+<h2 id="1-语法"><a href="#1-语法" class="headerlink" title="1. 语法"></a>1. 语法</h2><p>&amp;实体的名字;</p>
+<h2 id="2-常用的实体"><a href="#2-常用的实体" class="headerlink" title="2. 常用的实体"></a>2. 常用的实体</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">nbsp;  空格 </span><br><span class="line">&amp;gt;   大于号</span><br><span class="line">&amp;lt;   小于号 </span><br><span class="line">&amp;copy;  版权符号©️</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="三、标签"><a href="#三、标签" class="headerlink" title="三、标签"></a>三、标签</h1><p>关注语义，而不是样式！！！</p>
+<h2 id="1-注释标签"><a href="#1-注释标签" class="headerlink" title="1. 注释标签"></a>1. 注释标签</h2><p>不会在页面中显示</p>
 <p>​    1.做一些简单的注释，帮助理解记忆代码</p>
 <p>​    2.注解符号，不可以嵌套</p>
 <p>​    3.养成注释习惯</p>
 <p>​    4.简单明确</p>
+<h2 id="2-标题标签"><a href="#2-标题标签" class="headerlink" title="2. 标题标签"></a>2. 标题标签</h2><p>块元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标题<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标题<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-段落标签"><a href="#3-段落标签" class="headerlink" title="3. 段落标签"></a>3. 段落标签</h2><p>块元素</p>
+<p>一般情况，用来包裹文字，注意段与段之间有间隔</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    否釜害才天挟知人人我赠第她，我在和什玉或间主后韩留由是才历壬中样，特夭葬人何骨血死天嗣派让护，一颜留，间负要丈有国其娇种土沫办自是生，回措人主笔同于亡这都生高好兼，负了他了非清创招为五化，得个言葬保屯未考了战徒己快者张之留解，当文君，我始快死杨，我人承非。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">   胜三人的，哥说杨国县可，活要求就生统我，仍就藏一诗认一兴们爱圣人二才韩有，谭君极普处日了同三气憾会作锐此临洪王送，即虽有颜才少当方土主才圣，乏前善出尝才未领制帝法九揽要，报哉在活过什设人始洪冒同郭的不则，作极生意案必看首极说盲程要秦，第乡方的办山，法那便。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-hgroup标签"><a href="#4-hgroup标签" class="headerlink" title="4. hgroup标签"></a>4. hgroup标签</h2><p>用于为标题分组，可以将一组相关的标题同时放入到hgroup</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;hgroup&gt;</span><br><span class="line">	&lt;h1&gt;古诗一首&lt;/h1&gt;</span><br><span class="line">	&lt;h3&gt;杜甫&lt;/h3&gt;</span><br><span class="line">&lt;/hgroup&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-强调标签"><a href="#5-强调标签" class="headerlink" title="5. 强调标签"></a>5. 强调标签</h2><p>行内元素</p>
+<h3 id="5-1-em标签"><a href="#5-1-em标签" class="headerlink" title="5.1 em标签"></a>5.1 em标签</h3><p>从样式看，有倾斜，强调语音语调。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>必须<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-2-strong标签"><a href="#5-2-strong标签" class="headerlink" title="5.2 strong标签"></a>5.2 strong标签</h3><p>强调内容的重要性，从样式看，文字有加粗的效果。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>作业写完<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="6-换行标签"><a href="#6-换行标签" class="headerlink" title="6. 换行标签"></a>6. 换行标签</h2><p>br标签，强制换行，是自结束标签。</p>
 
         </div>
 
@@ -263,7 +312,7 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：网页结构</li>
+        <li>本文标题：html基础</li>
         <li>本文作者：九幽沧澜</li>
         <li>创建时间：2022-05-21 20:00:00</li>
         <li>
@@ -282,7 +331,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84/">#网页结构</a>&nbsp;
+                        <a href="/tags/html%E5%9F%BA%E7%A1%80/">#html基础</a>&nbsp;
                     </li>
                 
             </ul>
@@ -290,6 +339,21 @@
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/05/24/html_mobile_size/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">html移动端</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
@@ -470,7 +534,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84"><span class="nav-text">网页结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9E%84%E6%88%90"><span class="nav-text">一、构成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%96%87%E6%A1%A3%E5%A3%B0%E6%98%8E"><span class="nav-text">1. 文档声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A4%B4%E9%83%A8%E6%A0%87%E7%AD%BE"><span class="nav-text">2. 头部标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-meta%E6%A0%87%E7%AD%BE"><span class="nav-text">2.1 meta标签</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%A4%B4%E9%83%A8%E6%A0%87%E7%AD%BE"><span class="nav-text">3.头部标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%B8%BB%E5%86%85%E5%AE%B9%E5%8C%BA"><span class="nav-text">3.主内容区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%A0%87%E7%AD%BE"><span class="nav-text">二、标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%B3%A8%E9%87%8A%E7%AC%A6%E5%8F%B7"><span class="nav-text">1. 注释符号</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84"><span class="nav-text">一、网页结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%9E%84%E6%88%90"><span class="nav-text">1. 构成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%96%87%E6%A1%A3%E5%A3%B0%E6%98%8E"><span class="nav-text">1.1 文档声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E5%A4%B4%E9%83%A8%E6%A0%87%E7%AD%BE"><span class="nav-text">1.2 头部标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1-meta%E6%A0%87%E7%AD%BE"><span class="nav-text">1.2.1 meta标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-1-1-PC%E7%AB%AF"><span class="nav-text">1.2.1.1 PC端</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-1-2-%E7%A7%BB%E5%8A%A8%E7%AB%AF"><span class="nav-text">1.2.1.2 移动端</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E5%A4%B4%E9%83%A8%E6%A0%87%E7%AD%BE"><span class="nav-text">1.3.头部标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-%E4%B8%BB%E5%86%85%E5%AE%B9%E5%8C%BA"><span class="nav-text">1.4.主内容区</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%BD%93"><span class="nav-text">二、实体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%AF%AD%E6%B3%95"><span class="nav-text">1. 语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AE%9E%E4%BD%93"><span class="nav-text">2. 常用的实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%A0%87%E7%AD%BE"><span class="nav-text">三、标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E9%87%8A%E6%A0%87%E7%AD%BE"><span class="nav-text">1. 注释标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%A0%87%E9%A2%98%E6%A0%87%E7%AD%BE"><span class="nav-text">2. 标题标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%AE%B5%E8%90%BD%E6%A0%87%E7%AD%BE"><span class="nav-text">3. 段落标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-hgroup%E6%A0%87%E7%AD%BE"><span class="nav-text">4. hgroup标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%BC%BA%E8%B0%83%E6%A0%87%E7%AD%BE"><span class="nav-text">5. 强调标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-em%E6%A0%87%E7%AD%BE"><span class="nav-text">5.1 em标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-strong%E6%A0%87%E7%AD%BE"><span class="nav-text">5.2 strong标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%8D%A2%E8%A1%8C%E6%A0%87%E7%AD%BE"><span class="nav-text">6. 换行标签</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
