@@ -235,7 +235,7 @@
 <p>开发：2倍图尺寸，750&times;1334。</p>
 <p>iphonex及以上：目前市场主流 1倍图尺寸，宽375像素，高812像素。</p>
 <p>开发：2倍图尺寸，750&times;1624。</p>
-<h2 id="2-物理像素和逻辑像素"><a href="#2-物理像素和逻辑像素" class="headerlink" title="2. 物理像素和逻辑像素"></a>2. 物理像素和逻辑像素</h2><h3 id="2-1-物理像素"><a href="#2-1-物理像素" class="headerlink" title="2.1 物理像素"></a>2.1 物理像素</h3><p>设计的尺寸：pc端设计的尺寸和开发的尺寸是一样的</p>
+<h2 id="2-物理像素和逻辑像素"><a href="#2-物理像素和逻辑像素" class="headerlink" title="2. 物理像素和逻辑像素"></a>2. 物理像素和逻辑像素</h2><h3 id="2-1-物理像素"><a href="#2-1-物理像素" class="headerlink" title="2.1 物理像素"></a>2.1 物理像素</h3><p>设计的尺寸：pc端设计显示的尺寸和开发的尺寸是一样的。</p>
 <h3 id="2-2-逻辑像素"><a href="#2-2-逻辑像素" class="headerlink" title="2.2 逻辑像素"></a>2.2 逻辑像素</h3><p>开发的尺寸：，由于屏幕越来越大，分辨率越来越高，导致设计的尺寸于现实的尺寸不符。</p>
 <h3 id="2-3-例子"><a href="#2-3-例子" class="headerlink" title="2.3 例子"></a>2.3 例子</h3><p>不同的手机，分辨率相差很大：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">iphone3：480*320</span><br><span class="line">iphone4：960*640</span><br><span class="line">iphone5：1136*640</span><br><span class="line">iphone10：2436*1125</span><br><span class="line">三星S20：3200*1440</span><br></pre></td></tr></table></figure>
@@ -260,41 +260,6 @@
 <p>根据根标签尺寸大小，改变尺寸大小。 r-&gt;root根，根的倍数。根标签一般是html。</p>
 <p>注：rem最小值为6px，即父级标签设置尺寸小于6px，依旧安6px计算倍数。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="language-css">				<span class="comment">/* font-size: 1rem; */</span></span></span><br><span class="line"><span class="language-css">				<span class="attribute">font-size</span>: <span class="number">2rem</span>;</span></span><br><span class="line"><span class="language-css">			&#125;	</span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">html</span>&#123;</span></span><br><span class="line"><span class="language-css">                <span class="comment">/* font-size:12px; */</span></span></span><br><span class="line"><span class="language-css">                <span class="comment">/* rem依旧安6px计算尺寸 */</span></span></span><br><span class="line"><span class="language-css">				<span class="attribute">font-size</span>:<span class="number">1px</span>;</span></span><br><span class="line"><span class="language-css">			&#125;</span></span><br><span class="line"><span class="language-css">		</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">p</span>&gt;</span>看文字大小<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-屏幕适配"><a href="#4-屏幕适配" class="headerlink" title="4. 屏幕适配"></a>4. 屏幕适配</h2><h3 id="4-1-编译器配置"><a href="#4-1-编译器配置" class="headerlink" title="4.1 编译器配置"></a>4.1 编译器配置</h3><p>HBuilder：</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="../images/html_mobile_size/手机端屏幕适配1.png"
-                     
-                >
-
-<p>VS code:</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="../images/html_mobile_size/手机端屏幕适配4.png"
-                     
-                >
-
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="../images/html_mobile_size/手机端屏幕适配2.png"
-                     
-                >
-
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="../images/html_mobile_size/手机端屏幕适配3.png"
-                     
-                >
-
-
-
-<h3 id="4-2-flexible-js插件的使用"><a href="#4-2-flexible-js插件的使用" class="headerlink" title="4.2 flexible.js插件的使用"></a>4.2 flexible.js插件的使用</h3><p>flexible.js插件是淘宝团队提出并免费分享的解决方案。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">&lt;!-- 01控制屏幕大小 不放大 缩小 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover&quot;</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- 02引入flexile.js文件 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;js/flexible.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- 03设置rem和px换算的比例关系  1rem-&gt;75px --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="language-css">				<span class="attribute">width</span>: <span class="number">200px</span>;</span></span><br><span class="line"><span class="language-css">				<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">				<span class="attribute">font-size</span>:<span class="number">0.373333rem</span>;</span></span><br><span class="line"><span class="language-css">				<span class="attribute">background</span>: orange;</span></span><br><span class="line"><span class="language-css">			&#125;</span></span><br><span class="line"><span class="language-css">		</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>文字大小<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
         </div>
@@ -334,6 +299,21 @@
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/05/25/html_mobile_exploit/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
@@ -514,7 +494,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html%E7%A7%BB%E5%8A%A8%E7%AB%AF%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">html移动端——基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BC%80%E5%8F%91%E5%B0%BA%E5%AF%B8"><span class="nav-text">1. 开发尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0%E5%92%8C%E9%80%BB%E8%BE%91%E5%83%8F%E7%B4%A0"><span class="nav-text">2. 物理像素和逻辑像素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0"><span class="nav-text">2.1 物理像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E9%80%BB%E8%BE%91%E5%83%8F%E7%B4%A0"><span class="nav-text">2.2 逻辑像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E4%BE%8B%E5%AD%90"><span class="nav-text">2.3 例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E9%97%AE%E9%A2%98%E7%94%B1%E6%9D%A5"><span class="nav-text">2.4 问题由来</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%8D%95%E4%BD%8D"><span class="nav-text">3. 移动端单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%B9%E7%BC%A9%E5%8D%95%E4%BD%8D-%E2%80%94%E2%80%94em%E3%80%81rem"><span class="nav-text">弹缩单位 ——em、rem</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D"><span class="nav-text">4. 屏幕适配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E7%BC%96%E8%AF%91%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="nav-text">4.1 编译器配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-flexible-js%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">4.2 flexible.js插件的使用</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html%E7%A7%BB%E5%8A%A8%E7%AB%AF%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">html移动端——基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BC%80%E5%8F%91%E5%B0%BA%E5%AF%B8"><span class="nav-text">1. 开发尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0%E5%92%8C%E9%80%BB%E8%BE%91%E5%83%8F%E7%B4%A0"><span class="nav-text">2. 物理像素和逻辑像素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0"><span class="nav-text">2.1 物理像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E9%80%BB%E8%BE%91%E5%83%8F%E7%B4%A0"><span class="nav-text">2.2 逻辑像素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E4%BE%8B%E5%AD%90"><span class="nav-text">2.3 例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E9%97%AE%E9%A2%98%E7%94%B1%E6%9D%A5"><span class="nav-text">2.4 问题由来</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%8D%95%E4%BD%8D"><span class="nav-text">3. 移动端单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%B9%E7%BC%A9%E5%8D%95%E4%BD%8D-%E2%80%94%E2%80%94em%E3%80%81rem"><span class="nav-text">弹缩单位 ——em、rem</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>

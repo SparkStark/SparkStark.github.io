@@ -9,8 +9,6 @@
     
     <title>
         
-            css选择器 |
-        
         GlenSea Blog
     </title>
     
@@ -168,7 +166,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">css选择器</span>
+            <span class="title-hover-animation"></span>
         </div>
 
         
@@ -187,32 +185,10 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-05-21 20:00:00</span>
-        <span class="mobile">2022-05-21 20:00</span>
+        <span class="pc">2022-06-13 13:37:13</span>
+        <span class="mobile">2022-06-13 13:37</span>
     </span>
     
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/categories/html/">html</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fas fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/css%E9%80%89%E6%8B%A9%E5%99%A8/">css选择器</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
 
     
@@ -227,15 +203,40 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="CSS-基础选择器"><a href="#CSS-基础选择器" class="headerlink" title="CSS 基础选择器"></a>CSS 基础选择器</h1><h2 id="1-元素选择器"><a href="#1-元素选择器" class="headerlink" title="1. 元素选择器"></a>1. 元素选择器</h2><p>标签选择器（元素选择器）是指用HTML标签名称作为选择器，按标签名称分类，为页面中某一类标签指定统一的CSS样式。</p>
-<p><b>语法</b></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">标签名&#123;</span><br><span class="line">	属性1：属性值1；</span><br><span class="line">	属性2：属性值2；</span><br><span class="line">	属性3：属性值3；</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>例如，修改所有p标签中的字体颜色</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">css:</span><br><span class="line">p&#123;</span><br><span class="line">	color:red;</span><br><span class="line">&#125;</span><br><span class="line">html:</span><br><span class="line">...</span><br><span class="line">&lt;p&gt;红色&lt;/p&gt;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<h2 id="2-id选择器"><a href="#2-id选择器" class="headerlink" title="2. id选择器"></a>2. id选择器</h2><p>如果想要差异化选择不同的标签，单独选一个或者某几个标签，可以使用<b>类标签器</b>。<br><b>语法</b></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.类名&#123;</span><br><span class="line">	属性1：属性值1；</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>例如，将所有拥有red类的HTML元素为红色。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.red&#123;</span><br><span class="line">	color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id="Java数据变量及数据类型"><a href="#Java数据变量及数据类型" class="headerlink" title="Java数据变量及数据类型"></a>Java数据变量及数据类型</h1><h2 id="一、什么是变量"><a href="#一、什么是变量" class="headerlink" title="一、什么是变量"></a>一、什么是变量</h2><p>存储数据的空间====&gt;装数据的容器。</p>
+<p>计算机会给内存中的每一个变量分配一个内存地址。</p>
+<p>内存地址，计算机容易识别，人不容易识别，所以，我们会给变量取名。</p>
+<h2 id="二、变量命名规则"><a href="#二、变量命名规则" class="headerlink" title="二、变量命名规则"></a>二、变量命名规则</h2><p>①变量名由字母、数字、下划线_、美元符号$组成</p>
+<p>②变量名不能使用数字开头，不建议使用美元符号开头</p>
+<p>③变量名使用小驼峰命名法</p>
+<p>④变量名命名要有意义，见明知意</p>
+<p>⑤不能使用Java关键字，Java中大概有50个关键字</p>
+<h2 id="三、变量类型分类"><a href="#三、变量类型分类" class="headerlink" title="三、变量类型分类"></a>三、变量类型分类</h2><p>基本数据类型（8个）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">数值型数据：</span><br><span class="line">	整型</span><br><span class="line">		byte、short、int、long</span><br><span class="line">	浮点型</span><br><span class="line">		float、double</span><br><span class="line">非数值型数据：</span><br><span class="line">		char(字符)、boolean(布尔类型)</span><br></pre></td></tr></table></figure>
+
+<p>引用数据类型（3个）:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类（String）、接口、数组</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<p>①变量里存储的数据是可以改变的。</p>
+<p>②常量里存储的数据是不可以改变的。</p>
+<p>③常量名通常大写。</p>
+<p>④不同字符使用下划线分隔。</p>
+<p>⑤只能被赋值一次，通常定义时即对其初始化（赋值）。</p>
+<h2 id="四、Scanner类的使用"><a href="#四、Scanner类的使用" class="headerlink" title="四、Scanner类的使用"></a>四、Scanner类的使用</h2><p>第一步：导包</p>
+<p>import java.util.Scanner;或者import java.util.*;</p>
+<p>第二步：创建Scanner类对象</p>
+<p>Scanner input = new Scanner(System.in);</p>
+<p>第三步：获取数据</p>
+<p>int num = input.nextInt();  // 获取int类型数据</p>
+<p>double num2 = input.nextDouble();  // 获取double类型数据</p>
+<p>String str= input.next();  // 获取String类型数据</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一步：导包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo02</span> &#123;</span><br><span class="line">    </span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">//第二步：创建Scanner类对象</span></span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">input</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="comment">//第三步：获取数据</span></span><br><span class="line">		System.out.println(<span class="string">&quot;请输入一个整数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span>input.nextInt();</span><br><span class="line">		System.out.println(<span class="string">&quot;你输入的整数是：&quot;</span>+num);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入一个小数：&quot;</span>);</span><br><span class="line">		<span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span>input.nextDouble();</span><br><span class="line">		System.out.println(<span class="string">&quot;你输入的小数是：&quot;</span>+num2);</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>开发软件中，可以不用手动导包。以MyEclipse为例。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo03</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">//先创建Scanner类对象，再通过手动的方式或者快捷键的方式导包</span></span><br><span class="line">		<span class="comment">//手动导包方式：将鼠标放在有红线的Scanner上面，点击第一个导包</span></span><br><span class="line">		<span class="comment">//快捷键方式：按住Ctrl+Shift+O</span></span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">input</span>  <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入你的姓名：&quot;</span>);</span><br><span class="line">		<span class="comment">//获取数据：获取学生姓名</span></span><br><span class="line">		<span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> input.next();</span><br><span class="line">		<span class="comment">//输出你输入的数据</span></span><br><span class="line">		System.out.println(<span class="string">&quot;欢迎你，&quot;</span> + name);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
         </div>
 
@@ -243,11 +244,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：css选择器</li>
+        <li>本文标题：</li>
         <li>本文作者：九幽沧澜</li>
-        <li>创建时间：2022-05-21 20:00:00</li>
+        <li>创建时间：2022-06-13 13:37:13</li>
         <li>
-            本文链接：https://glensea.cn/2022/05/21/label_chosen/
+            本文链接：https://glensea.cn/2022/06/13/0608-java变量及数据类型/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -259,14 +260,6 @@
         
 
         
-            <ul class="post-tags-box">
-                
-                    <li class="tag-item">
-                        <a href="/tags/css%E9%80%89%E6%8B%A9%E5%99%A8/">#css选择器</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
 
         
             <div class="article-nav">
@@ -274,13 +267,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/05/21/html_web_structure/"
+                           href="/2022/06/13/0609-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">html基础</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -290,10 +283,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/03/13/HexoInstall/"
+                           href="/2022/06/13/0607-Java%E5%85%A5%E9%97%A8/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hexo个人博客安装及配置</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -465,7 +458,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS-%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-text">CSS 基础选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-text">1. 元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-id%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-text">2. id选择器</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E6%95%B0%E6%8D%AE%E5%8F%98%E9%87%8F%E5%8F%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">Java数据变量及数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%98%E9%87%8F"><span class="nav-text">一、什么是变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="nav-text">二、变量命名规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB"><span class="nav-text">三、变量类型分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81Scanner%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">四、Scanner类的使用</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>

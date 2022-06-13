@@ -231,7 +231,8 @@
 <h2 id="Hexo搭建"><a href="#Hexo搭建" class="headerlink" title="Hexo搭建"></a>Hexo搭建</h2><h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h3><p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。Git非常强大，我觉得建议每个人都去了解一下。糖葫芦的小黑屋的Git教程写的非常好，大家可以了解一下。<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/huangqqdy/article/details/83032408" >Git教程<i class="fas fa-external-link-alt"></i></a></p>
 <p>windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
 <p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
 <p>安装好后，用 <em>git –version</em> 来查看一下版本</p>
 <h3 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h3><p>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/zhangkaidsy/article/details/86645070" >node.js安装及环境配置<i class="fas fa-external-link-alt"></i></a></p>
 <p>windows：nodejs选择LTS版本就行了。</p>
@@ -264,21 +265,19 @@
 <p>使用ctrl+c可以把服务关掉。</p>
 <h3 id="4-GitHub创建个人仓库"><a href="#4-GitHub创建个人仓库" class="headerlink" title="4. GitHub创建个人仓库"></a>4. GitHub创建个人仓库</h3><p>首先，你先要有一个GitHub账户，去注册一个吧。</p>
 <p>注册完登录后，在GitHub.com中看到一个New repository，新建仓库</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/create_repository.yqes5bmnig0.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/1c5bddb519de4334.png"
                      
-                >
-
+                ></p>
 <p>创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/insert_repository_name.7050oi97szc0.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/a71b9df40e56280f.png"
                      
-                >
-
+                ></p>
 <p>点击create repository。</p>
 <h3 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a>5. 生成SSH添加到GitHub</h3><p>回到你的git bash中，</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
@@ -288,29 +287,26 @@
 <p>然后创建SSH,一路回车</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 <p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/id_rsa.7hv5wp8bbq80.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/0a5069f0522e2a31.png"
                      
-                >
-
+                ></p>
 <p>ssh，简单来讲，就是一个秘钥，其中， <em>id_rsa</em> 是你这台电脑的私人秘钥，不能给别人看的， <em>id_rsa.pub</em> 是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
 <p>而后在GitHub的setting中，找到 <em>SSH keys</em> 的设置选项，点击 <em>New SSH key</em><br>把你的id_rsa.pub里面的信息复制进去。</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/setting.3hq7jleiqd40.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/44013e9f3af510bc.png"
                      
-                >
-
-<img  align="center" 
+                ></p>
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/ssh_key.22d200fj1hog.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/2ac4ed19311ac9f7.png"
                      
-                >
-
+                ></p>
 <p>在gitbash中，查看是否成功</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><p>报错：</p>
@@ -327,13 +323,12 @@
 <p>其中 <em>hexo clean</em> 清除了你之前生成的东西，也可以不加。<br> <em>hexo generate</em> 顾名思义，生成静态文章，可以用 hexo g缩写<br><em>hexo deploy</em> 部署文章，可以用 <em>hexo d</em> 缩写</p>
 <p>注意deploy时可能要你输入username和password。</p>
 <p>得到下图就说明部署成功了，过一会儿就可以在 <em><code>http://yourname.github.io</code></em> 这个网站看到你的博客了！！</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/hexo_d.712w24fvkj00.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/ab55da0846c48ca6.jpg"
                      
-                >
-
+                ></p>
 <h4 id="可能遇到的问题-1"><a href="#可能遇到的问题-1" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><h5 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h5><img  align="center" 
                      lazyload
                      src="/images/loading.svg"
@@ -345,25 +340,23 @@
 <p>删除hexo（例：前面创建的myblog）目录下的 <em>.deploy_git</em> 文件夹</p>
 <p>执行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h5 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h5><img  align="center" 
+<h5 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h5><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/error2.4p0w7lgrxyw0.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/5a605185a9287e5a.png"
                      
-                >
-
+                ></p>
 <p>解决方法：</p>
 <p>将hexo（例：前面创建的myblog）目录下的配置文件 _<em>config.yml</em> 中</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>改为：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h5 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h5><img  align="center" 
+<h5 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h5><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/error3.2eguuzqhspog.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/b79d7fcba6bae0ba.png"
                      
-                >
-
+                ></p>
 <p>解决方法：</p>
 <p>可能因为你连接的WIFI拦截了，换成个人的手机热点即可。</p>
 <h3 id="7-设置个人域名"><a href="#7-设置个人域名" class="headerlink" title="7. 设置个人域名"></a>7. 设置个人域名</h3><p>现在你的个人网站的地址是 yourname.github.io，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</p>
@@ -394,21 +387,19 @@
                 >
 
 <p>登录GitHub，进入 <em>之前创建的仓库</em> ，点击settings，设置Custom domain，输入你的域名 <em>glensea.cn</em></p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/custom_domain.aekmzg3zeow.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/82bac947c3d32315.png"
                      
-                >
-
+                ></p>
 <p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。没有该文件每次 <em>hexo d</em> 都会重置你的 <em>Custom domain</em></p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.jsdelivr.net/gh/sparkTony/image-hosting@master/CNAME.5kyycspy9xg0.webp"
+                     data-src="https://s3.bmp.ovh/imgs/2022/05/25/10c848e597f6b0d7.png"
                      
-                >
-
+                ></p>
 <p>最后，在gitbash中，输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
@@ -486,10 +477,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/03/13/javaStudy/"
+                           href="/2021/07/30/2ddonghua/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Java自学指南</span>
+                                <span class="post-nav-title-item">css动画</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
