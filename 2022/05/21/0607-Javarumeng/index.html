@@ -9,6 +9,8 @@
     
     <title>
         
+            Java入门 |
+        
         GlenSea Blog
     </title>
     
@@ -166,7 +168,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation"></span>
+            <span class="title-hover-animation">Java入门</span>
         </div>
 
         
@@ -185,10 +187,32 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-06-06 15:23:20</span>
-        <span class="mobile">2022-06-06 15:23</span>
+        <span class="pc">2022-05-21 20:00:00</span>
+        <span class="mobile">2022-05-21 20:00</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/java/">java</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/">java基础</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -203,109 +227,76 @@
         
 
         <div class="article-content markdown-body">
-            <h2 id="一、JDK下载"><a href="#一、JDK下载" class="headerlink" title="一、JDK下载"></a>一、JDK下载</h2><p>官网地址：<a class="link"   target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/#java8" >https://www.oracle.com/java/technologies/downloads/#java8<i class="fas fa-external-link-alt"></i></a></p>
-<p>建议下载<strong>JAVA 8</strong>版本进行安装。</p>
-<p>选择适合自己电脑的版本进行安装</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128130250503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
-                     
-                >
-
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128130229624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
-                     
-                >
+            <h1 id="Java入门"><a href="#Java入门" class="headerlink" title="Java入门"></a>Java入门</h1><h2 id="一、DOS常用命令"><a href="#一、DOS常用命令" class="headerlink" title="一、DOS常用命令"></a>一、DOS常用命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">dir directory     查看当前文件夹下有多少文件及文件夹</span><br><span class="line">    .    表示当前文件夹</span><br><span class="line">	..   表示当前文件夹的上一层文件夹</span><br><span class="line"></span><br><span class="line">md  make directory 创建文件夹\目录</span><br><span class="line"></span><br><span class="line">rd  remove directory 移除文件夹\目录</span><br><span class="line"></span><br><span class="line">cd change directory</span><br><span class="line">	回到磁盘根目录 cd /      或者         cd \</span><br><span class="line">	回到上一级目录 cd ..</span><br><span class="line"></span><br><span class="line">del  主要删除文件</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="二、JDK安装"><a href="#二、JDK安装" class="headerlink" title="二、JDK安装"></a>二、JDK安装</h2><p>无脑下一步即可。</p>
-<p><strong>注意：</strong></p>
-<p>建议修改安装路径至其他盘，不装在C盘系统盘。</p>
+<h2 id="二、语言类型"><a href="#二、语言类型" class="headerlink" title="二、语言类型"></a>二、语言类型</h2><h3 id="1-1-编译型语言"><a href="#1-1-编译型语言" class="headerlink" title="1.1 编译型语言"></a>1.1 编译型语言</h3><p>需要进行编译，编译后点击字节码文件可以直接运行。</p>
+<h3 id="1-2-解释型语言"><a href="#1-2-解释型语言" class="headerlink" title="1.2 解释型语言"></a>1.2 解释型语言</h3><p>不需要编译，可以在环境中直接运行</p>
+<h3 id="1-3-Java语言"><a href="#1-3-Java语言" class="headerlink" title="1.3 Java语言"></a>1.3 Java语言</h3><p>即使编译型语言，也是解释型语言。(也可以说既不是编译型语言，也不是解释语言)</p>
+<p>Java需要进行编译形成“.class”文件，可以看成编译型语言。</p>
+<p>“.class”文件不能直接运行，需要在JVM虚拟机上才可以运行。</p>
+<h2 id="三、HelloWorld代码编写及运行"><a href="#三、HelloWorld代码编写及运行" class="headerlink" title="三、HelloWorld代码编写及运行"></a>三、HelloWorld代码编写及运行</h2><p>使用记事本创建”HelloWorld.txt“文件，修改后缀名为”.java“</p>
+<p>输入代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;HelloWorld&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>win+R输入”cmd“打开DOS窗口，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure>
+
+<p>生成”.class”文件，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java HelloWorld</span><br></pre></td></tr></table></figure>
+
+<p>运行”.class“文件</p>
+<h2 id="四、使用MyEclipse创建Java项目"><a href="#四、使用MyEclipse创建Java项目" class="headerlink" title="四、使用MyEclipse创建Java项目"></a>四、使用MyEclipse创建Java项目</h2><p>①创建Java项目。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s3.bmp.ovh/imgs/2022/06/06/628f6f990df255d5.png"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/a62ad1b036225a0d.png"
                      
                 ></p>
-<h2 id="三、配置环境变量"><a href="#三、配置环境变量" class="headerlink" title="三、配置环境变量"></a>三、配置环境变量</h2><h3 id="3-1-第一步"><a href="#3-1-第一步" class="headerlink" title="3.1 第一步"></a>3.1 第一步</h3><p>win10点开“文件资源管理器”，右键电脑选择“属性”。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s3.bmp.ovh/imgs/2022/06/06/1fc81961cf1afba8.png"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/bfc725b039910e11.png"
                      
                 ></p>
-<h3 id="3-2-第二步"><a href="#3-2-第二步" class="headerlink" title="3.2 第二步"></a>3.2 第二步</h3><p>下滑，点击“高级系统设置”。</p>
+<p>②在项目里面创建包，包的命名采用域名倒着写的格式。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s3.bmp.ovh/imgs/2022/06/06/405a4aeb19912b8f.png"
-                      alt="405a4aeb19912b8f"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/f5cc9ddac3910f2a.png"
+                     
                 ></p>
-<h3 id="3-3-第三步"><a href="#3-3-第三步" class="headerlink" title="3.3 第三步"></a>3.3 第三步</h3><p>点击“系统变量”。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s3.bmp.ovh/imgs/2022/06/06/afec101a7aabc166.png"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/2d19d98ed683f1ea.png"
                      
                 ></p>
-<h3 id="3-4-第四步"><a href="#3-4-第四步" class="headerlink" title="3.4 第四步"></a>3.4 第四步</h3><p>①点击系统变量下的“新建”。</p>
-<p>②在“变量名”栏中，输入“JAVA_HOME”。</p>
-<p>③在“变量值”栏中，输入你<strong>Java JDK</strong>的安装地址，不用写到bin。</p>
+<p>③创建类文件，类名采用大驼峰命名法。</p>
+<p>大驼峰：类名的每个单词首字母大写</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s3.bmp.ovh/imgs/2022/06/06/42456bb9bd5df8f4.png"
-                      alt="image-20220606170736479"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/93e279542e1b6605.png"
+                     
                 ></p>
-<h3 id="3-5-第五步"><a href="#3-5-第五步" class="headerlink" title="3.5 第五步"></a>3.5 第五步</h3><p>选择“Path”，点击编辑。</p>
-<img  align="center" 
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128180433186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/a56434cf53906f08.png"
                      
-                >
-
-<h3 id="3-6-第六步"><a href="#3-6-第六步" class="headerlink" title="3.6 第六步"></a>3.6 第六步</h3><p>①点击新建。</p>
-<p>②输入%JAVA_HOME%\bin。</p>
-<p>③点击确定。</p>
-<img  align="center" 
+                ></p>
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128180511516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
+                     data-src="https://s3.bmp.ovh/imgs/2022/06/07/8896d761623601a8.png"
                      
-                >
-
-<h3 id="3-7-验证是否安装成功"><a href="#3-7-验证是否安装成功" class="headerlink" title="3.7 验证是否安装成功"></a>3.7 验证是否安装成功</h3><p>“win+R”打开“DOS窗口”</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128162911255.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
-                     
-                >
-
-<p>输入“javac”，按回车键，如图显示，表示Path变量配置OK。</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128174417289.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
-                     
-                >
-
-<p>输入“java -version”，按回车键，显示当前Java版本号。</p>
-<img  align="center" 
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://img-blog.csdnimg.cn/20210128181832580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjUwMTE4,size_16,color_FFFFFF,t_70#pic_center"
-                     
-                >
+                ></p>
+<h2 id="五、MyEclipse快捷键"><a href="#五、MyEclipse快捷键" class="headerlink" title="五、MyEclipse快捷键"></a>五、MyEclipse快捷键</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+C:复制</span><br><span class="line"></span><br><span class="line">Ctrl+V:粘贴</span><br><span class="line"></span><br><span class="line">Ctrl+A:全选</span><br><span class="line"></span><br><span class="line">Ctrl+S:保存</span><br><span class="line"></span><br><span class="line">Ctrl+D:删除光标所在行</span><br><span class="line"></span><br><span class="line">Alt+/:快速补全</span><br><span class="line"></span><br><span class="line">Ctrl+/:单行注释</span><br><span class="line"></span><br><span class="line">Ctrl+Shift+/:多行注释</span><br><span class="line"></span><br><span class="line">Ctrl+Shift+\:取消多行注释</span><br><span class="line"></span><br><span class="line">Ctrl+Shift+F:格式化格式</span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43250118/article/details/113324562?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165450267516782425197637%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165450267516782425197637&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-113324562-null-null.142%5Ev11%5Econtrol,157%5Ev13%5Econtrol&amp;utm_term=java%E5%AE%89%E8%A3%85&amp;spm=1018.2226.3001.4187" >https://blog.csdn.net/qq_43250118/article/details/113324562?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165450267516782425197637%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165450267516782425197637&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-113324562-null-null.142^v11^control,157^v13^control&amp;utm_term=java%E5%AE%89%E8%A3%85&amp;spm=1018.2226.3001.4187<i class="fas fa-external-link-alt"></i></a></p>
 
         </div>
 
@@ -313,11 +304,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：</li>
+        <li>本文标题：Java入门</li>
         <li>本文作者：九幽沧澜</li>
-        <li>创建时间：2022-06-06 15:23:20</li>
+        <li>创建时间：2022-05-21 20:00:00</li>
         <li>
-            本文链接：https://glensea.cn/2022/06/06/java_Install/
+            本文链接：https://glensea.cn/2022/05/21/0607-Javarumeng/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -329,6 +320,14 @@
         
 
         
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/java%E5%9F%BA%E7%A1%80/">#java基础</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
             <div class="article-nav">
@@ -336,13 +335,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/06/13/0607-Java%E5%85%A5%E9%97%A8/"
+                           href="/2022/05/24/html_mobile_size/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-title-item">html移动端——基础知识</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -352,10 +351,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/05/25/Flex%E5%8A%A0/"
+                           href="/2022/05/21/0608-javabainliang/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-title-item">Java数据变量及数据类型</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -527,7 +526,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81JDK%E4%B8%8B%E8%BD%BD"><span class="nav-text">一、JDK下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81JDK%E5%AE%89%E8%A3%85"><span class="nav-text">二、JDK安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-text">三、配置环境变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="nav-text">3.1 第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="nav-text">3.2 第二步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="nav-text">3.3 第三步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E7%AC%AC%E5%9B%9B%E6%AD%A5"><span class="nav-text">3.4 第四步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-%E7%AC%AC%E4%BA%94%E6%AD%A5"><span class="nav-text">3.5 第五步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-%E7%AC%AC%E5%85%AD%E6%AD%A5"><span class="nav-text">3.6 第六步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-text">3.7 验证是否安装成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E5%85%A5%E9%97%A8"><span class="nav-text">Java入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81DOS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-text">一、DOS常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%AF%AD%E8%A8%80%E7%B1%BB%E5%9E%8B"><span class="nav-text">二、语言类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="nav-text">1.1 编译型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="nav-text">1.2 解释型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Java%E8%AF%AD%E8%A8%80"><span class="nav-text">1.3 Java语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81HelloWorld%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E5%8F%8A%E8%BF%90%E8%A1%8C"><span class="nav-text">三、HelloWorld代码编写及运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E4%BD%BF%E7%94%A8MyEclipse%E5%88%9B%E5%BB%BAJava%E9%A1%B9%E7%9B%AE"><span class="nav-text">四、使用MyEclipse创建Java项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81MyEclipse%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-text">五、MyEclipse快捷键</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
